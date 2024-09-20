@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "daws67s-state-dev-new" # you should create this s3 bucket
+    bucket         = "daws67s-state-prod-new" # you should create this s3 bucket
     key            = "vpn"
     region         = "us-east-1"
-    dynamodb_table = "daws67s-locking-dev" # you should create the table in dynamoDB
+    dynamodb_table = "daws67s-locking-prod" # you should create the table in dynamoDB
   }
 }
 
