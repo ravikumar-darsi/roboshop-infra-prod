@@ -20,6 +20,7 @@ variable "project_name" {
 variable "environment" {
   default = "prod"
 }
+
 variable "public_subnets_cidr" {
   default = ["10.1.1.0/24", "10.1.2.0/24"]
 }
